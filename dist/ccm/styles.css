@@ -1,0 +1,25 @@
+body {
+	margin:0;
+	background:url(bg.gif);
+	background-repeat:repeat-x;
+	background-color:#000;
+}
+
+#main {
+	background:url(logo.png) no-repeat;
+	background-position:top center;
+	height:1018px;
+}
+
+#main h1, #main small {
+	margin:0px;
+	display:block;
+	text-indent:-9999px;
+}
+
+.container {
+	width:1018px;
+	margin:0 auto;
+  	position:relative;
+	border:0px solid red;
+}

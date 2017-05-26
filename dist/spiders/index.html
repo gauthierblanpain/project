@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.css" type="text/css">
+    <link rel="stylesheet" href="assets/libraries/chosen/chosen.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    
+    <title>Dealership Test Page</title>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/js/bjqs-1.3.min.js"></script>
+	<script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 400,
+            width       : 1170,
+            responsive  : true
+          });
+
+        });
+      </script>
+
+</head>
+<body>
+<div id="wrapper-outer" >
+    <div id="wrapper">
+        <div id="wrapper-inner">
+            <!-- HEADER -->
+            <div id="header-wrapper">
+                <div id="header">
+                    <div id="header-inner">
+                        <div class="container">
+                            <div class="navbar">
+                                <div class="navbar-inner">
+                                    <div class="row">
+                                        <div class="logo-wrapper span4">
+                                            <a href="#nav" class="hidden-desktop" id="btn-nav">Toggle navigation</a>
+
+                                            <div class="logo">
+                                                <a href="#" title="Home">
+                                                    <img src="assets/img/logo.png" alt="Home">
+                                                </a>
+                                            </div><!-- /.logo -->
+                                        </div><!-- /.logo-wrapper -->
+
+                                        <a class="btn btn-primary contact phone" href="#">Call Us Today</a>
+                                        <a class="btn btn-primary contact email" href="#">Contact Us</a>
+                                    </div><!-- /.row -->
+                                </div><!-- /.navbar-inner -->
+                            </div><!-- /.navbar -->
+                        </div><!-- /.container -->
+                    </div><!-- /#header-inner -->
+                </div><!-- /#header -->
+            </div><!-- /#header-wrapper -->
+
+            <!-- NAVIGATION -->
+            <div id="navigation">
+                <div class="container">
+                    <div class="navigation-wrapper">
+                        <div class="navigation">
+                            <ul class="nav">
+                            	<li><a href="#" class="home">Home</a></li>
+                                <li><a href="#">New Cars</a></li>
+                                <li><a href="#">Used Cars</a></li>
+                                <li><a href="#">Business Sales</a></li>
+                                <li><a href="#">Attractive Offers</a></li>
+                                <li><a href="#">Aftersales</a></li>
+                                <li><a href="#">Finance Options</a></li>
+                                <li><a href="#">Trade Parts</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                </li>
+                            </ul><!-- /.nav -->
+                        </div><!-- /.navigation -->
+                    </div><!-- /.navigation-wrapper -->
+                </div><!-- /.container -->
+            </div><!-- /.navigation -->
+
+            <!-- CONTENT -->
+            <div id="content">
+<div class="container">
+    <div id="main">
+        <div class="slider">
+    <div id="banner-fade">
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="assets/img/slide-1.png"></li>
+          <li><img src="assets/img/slide-2.png"></li>
+          <li><img src="assets/img/slide-1.png"></li>
+          <li><img src="assets/img/slide-3.jpg"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+      </div>
+</div><!-- /.slider-wrapper -->
+            <div class="row">
+                <div class="span4">
+                    <div class="car-filter">
+                    	<h3>Used Car Search</h3>
+                        <div class="content">
+                        <a href="#" class="monthly">Monthly Price</a>
+                        <a href="#" class="cash">Cash Price</a>
+                            <form method="get" action="?">
+                                 <div class="type control-group">
+                                    <div class="controls">
+                                        <select id="makes" name="makes">
+                                            <option value="" selected="selected">All Makes</option>
+                                            <option value="" >Ford</option>
+                                            <option value="" >Ferrari</option>
+                                            <option value="" >Audi</option>
+                                            <option value="" >Ferrari</option>
+                                            <option value="" >Ford</option>
+                                            <option value="" >Ferrari</option>
+                                        </select>
+                                    </div><!-- /.controls -->
+                                </div><!-- /.control-group -->
+                                
+                                <div class="type control-group">
+                                    <div class="controls">
+                                        <select id="models" name="models">
+                                            <option value="" selected="selected">All Models</option>
+                                            <option value="50" >Fiesta</option>
+                                            <option value="51" >Mondeo</option>
+                                            <option value="52" >Some Car</option>
+                                            <option value="53" >Big Car</option>
+                                            <option value="54" >Van</option>
+                                            <option value="55" >Vivarro</option>
+                                        </select>
+                                    </div><!-- /.controls -->
+                                </div><!-- /.control-group -->
+
+                                <div class="min-price control-group">
+                                    <div class="controls">
+                                        <select id="min">
+                                        	<option value="">Min Price</option>
+                                            <option value="1" >£0</option>
+                                            <option value="2" >£500</option>
+                                            <option value="3" >£1000</option>
+                                            <option value="4" >£1500</option>
+											<option value="5" >£2000</option>
+                                        </select>
+                                    </div><!-- /.controls -->
+                                </div><!-- /.control-group -->
+
+                                <div class="max-price control-group">
+                                    <div class="controls">
+                                        <select id="max">
+                                            <option value="">Max Price</option>
+                                            <option value="1" >£0</option>
+                                            <option value="2" >£500</option>
+                                            <option value="3" >£1000</option>
+                                            <option value="4" >£1500</option>
+											<option value="5" >£2000</option>
+                                        </select>
+                                    </div><!-- /.controls -->
+                                </div><!-- /.control-group -->
+                                
+                                <div class="form-actions">
+                                    <input type="submit" value="Search Used Cars" class="btn btn-primary btn-large search">
+                                </div><!-- /.form-actions -->
+                            </form>
+                            <p class="text-center">Or Use Our <a href="#">Advanced Search</a></p>
+                        </div><!-- /.content -->
+                    </div><!-- /.property-filter -->
+                </div><!-- /.images -->
+                <div class="span8">
+                 	<div class="carousel">
+    <div class="content">
+    <div class="line-separator"></div>
+        <a class="carousel-prev" href="#">Previous</a>
+        <a class="carousel-next" href="#">Next</a>
+        <ul>
+            <li>
+            	<div class="title">
+                    <h3><a href="#">Car Of The Month</a></h3>
+                </div><!-- /.title -->
+                <div class="image">
+                    <a href="#"></a>
+                    <img src="assets/img/carousel-1.jpg" alt="" width="217">
+                </div><!-- /.image -->
+                <p>fsdsdsd dssdsd sd sd</p>
+                <p class="red">£30,450</p>
+            </li>
+
+            <li>
+            	<div class="title">
+                    <h3><a href="#">Aftersales</a></h3>
+                </div><!-- /.title -->
+                <div class="image">
+                    <a href="#"></a>
+                    <img src="assets/img/carousel-2.jpg" alt="" width="217">
+                </div><!-- /.image -->
+                <p>fsdsdsd dssdsd sd sd</p>
+                <p><a href="#" class="red">Read More</a></p>
+            </li>
+
+            <li>
+            	<div class="title">
+                    <h3><a href="#">Motability</a></h3>
+                </div><!-- /.title -->
+                <div class="image">
+                    <a href="#"></a>
+                    <img src="assets/img/carousel-3.jpg" alt="" width="217">
+                </div><!-- /.image -->
+                <p>fsdsdsd dssdsd sd sd</p>
+                <p><a href="#" class="red">Read More</a></p>
+            </li>
+
+            <li>
+            	<div class="title">
+                    <h3><a href="#">Reliability</a></h3>
+                </div><!-- /.title -->
+                <div class="image">
+                    <a href="#"></a>
+                    <img src="assets/img/carousel-2.jpg" alt="" width="217">
+                </div><!-- /.image -->
+                <p>fsdsdsd dssdsd sd sd</p>
+                <p><a href="#" class="red">Read More</a></p>
+            </li>
+
+        </ul>
+    </div><!-- /.content -->
+</div><!-- /.carousel -->   
+	
+                </div><!-- /.span8 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="span12">
+                <div class="blurb">
+                <h1>Welcome to Audi Dealership</h1>
+                <h2>Representing Car Dealerships All Over The World</h2>
+                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lacinia lorem. Nulla ut tempor lorem. Maecenas convallis id nisl vel convallis. Sed rutrum tincidunt elementum. Integer consequat aliquam erat vel iaculis. Sed lobortis risus vel eros pharetra, at dignissim ipsum viverra. Vestibulum at volutpat magna. Integer sodales elit ac tortor volutpat, feugiat venenatis sapien mollis.</p>
+
+<p>Donec a lacinia augue. Vivamus urna libero, varius et gravida vel, volutpat eu leo. Praesent sed lectus varius, lobortis erat vitae, tristique nisl. Phasellus eget tincidunt justo. Phasellus pretium vestibulum augue, eu dictum arcu dictum id. In mi odio, adipiscing ac ornare non, placerat non elit.</p>
+				<a class="btn btn-primary light" href="#">Read More</a>
+                <a class="btn btn-primary dark" href="#">Meet The Team</a>
+				</div><!-- /#blurb -->
+                </div><!-- /.span12 -->
+           </div><!-- /.row -->
+           <div class="row">
+                <div class="span12">
+                <div class="testimonials">
+                <h2>What Our Customers Say...</h2>
+                <a class="read" href="#">Read All</a>
+                <a class="prev" href="#">Previous</a>
+        		<a class="next" href="#">Next</a>
+				</div><!-- /#testimonails -->
+                </div><!-- /.span12 -->
+           </div><!-- /.row -->
+           <div class="row">
+                <div class="span6">
+                	<div class="testimonials">
+                	<div class="bubble light">
+                    <p>“Extremely friendly. Very professional.”</p>
+                    <span>Joe Bloggs</span>
+                    </div><!-- /.bubble -->
+                    <img src="assets/img/customer-photo-1.png">
+                    </div><!-- /.testimonials -->
+                </div><!-- /.span6 -->
+                <div class="span6">
+                	<div class="testimonials">
+                	<div class="bubble">
+                    <p>“You guys are amazing!”</p>
+                    <span>Jenny Bloggs</span>
+                    </div><!-- /.bubble -->
+                    <img src="assets/img/customer-photo-2.png">
+                    </div><!-- /.testimonials -->
+                </div><!-- /.span6 -->
+           </div><!-- /.row -->
+
+    </div>
+</div>
+
+    </div><!-- /#content -->
+</div><!-- /#wrapper-inner -->
+
+<div id="footer-wrapper">
+    <div id="footer-top">
+        <div id="footer-top-inner" class="container">
+            <div class="row">
+                <div class="span6">
+                    <div class="title">
+                        <h2>Used Audi Range</h2>
+                    </div><!-- /.title -->
+
+                    <div class="content">
+                        <a href="#">Used Audi A1</a>	<a href="#">Used Audi A3</a>	<a href="#">Used Audi A4</a>	<a href="#">Used Audi A5</a><br> 
+						<a href="#">Used Audi A6</a>	<a href="#">Used Audi A7</a>	<a href="#">Used Audi A8</a>	<a href="#">Used Audi Q3</a><br> 
+						<a href="#">Used Audi Q5</a>	<a href="#">Used Audi Q7</a>	<a href="#">Used Audi TT</a>	<a href="#">Used Audi R8</a><br> 
+                    </div><!-- /.content -->
+                    
+                    <div class="title">
+                        <h2>New Audi Range</h2>
+                    </div><!-- /.title -->
+
+                    <div class="content">
+                        <a href="#">New Audi A1</a>	<a href="#">New Audi A3</a>	<a href="#">New Audi A4</a>	<a href="#">New Audi A5</a><br> 
+						<a href="#">New Audi A6</a>	<a href="#">New Audi A7</a>	<a href="#">New Audi A8</a>	<a href="#">New Audi Q3</a><br> 
+						<a href="#">New Audi Q5</a>	<a href="#">New Audi Q7</a>	<a href="#">New Audi TT</a>	<a href="#">New Audi R8</a><br> 
+                    </div><!-- /.content -->
+                </div><!-- /.widget -->
+
+                <div class="span6">
+                    <div class="title">
+                        <h2>Latest Tweets</h2>
+                    </div><!-- /.title -->
+
+                    <div class="content">
+                    <img src="assets/img/static-tweets.jpg">
+                    </div><!-- /.content -->
+                    
+                    <div class="title">
+                        <h2>Contact Us</h2>
+                    </div><!-- /.title -->
+
+                    <div class="content">
+                    <p>Call Us Today On</p>
+                    <p class="phone">Audi London <span>015465 689756</span></p>
+                    <p class="phone">Audi Birmingham <span>015465 689756</span></p>
+                    <p class="phone">Audi Manchester <span>015465 689756</span></p>
+                    </div><!-- /.content -->
+                </div><!-- /.widget -->
+            </div><!-- /.row -->
+        </div><!-- /#footer-top-inner -->
+    </div><!-- /#footer-top -->
+
+    <div id="footer" class="footer container">
+        <div id="footer-inner">
+            <div class="row">
+                <div class="span6 copyright">
+                    <p><a href="#">Sitemap</a> | <a href="#">Privacy Policy</a> | <a href="#">Legal</a>. © Copyright 2014 <a href="#">Audi</a>. All rights reserved.</p>
+                </div><!-- /.copyright -->
+                <div class="span6 share">
+                    <div class="content">
+                        <ul class="nav">
+                            <li><a href="http://www.facebook.com" class="facebook">Facebook</a></li>
+                            <li><a href="http://www.twitter.com" class="twitter">Twitter</a></li>
+                        </ul>
+                    </div><!-- /.content -->
+            </div><!-- /.row -->
+        </div><!-- /#footer-inner -->
+    </div><!-- /#footer -->
+</div><!-- /#footer-wrapper -->
+</div><!-- /#wrapper -->
+</div><!-- /#wrapper-outer -->
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/carousel.js"></script>
+<script type="text/javascript" src="assets/libraries/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="assets/libraries/chosen/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</body>
+</html>

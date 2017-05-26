@@ -1,0 +1,25 @@
+body {
+	margin:0;
+	background-repeat:repeat-x;
+	background-color:#000;
+}
+
+#main {
+	background:url(logo.jpg) no-repeat;
+	background-position:center center;
+	height:800px;
+	background-size: contain;
+}
+
+#main h1, #main small {
+	margin:0px;
+	display:block;
+	text-indent:-9999px;
+}
+
+.container {
+	width:800px;
+	margin:0 auto;
+  	position:relative;
+	border:0px solid red;
+}

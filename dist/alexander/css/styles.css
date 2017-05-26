@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px; padding:0px;
+	font-size:13px;
+	line-height:19px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	background:#fff url(../graphics/page.jpg) no-repeat;
+	background-position:top center;
+	height:1905px;
+}

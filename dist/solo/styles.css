@@ -1,0 +1,23 @@
+body {
+	margin:0;
+	background:url(bg.gif) repeat-x;
+}
+
+#main {
+	height:1300px;
+	background:url(solo.png) no-repeat;
+	background-position:top center;
+}
+
+#main h1, #main small {
+	margin:0px;
+	display:block;
+	text-indent:-9999px;
+}
+
+.container {
+	width:960px;
+	margin:0 auto;
+  	position:relative;
+	border:0px solid red;
+}
